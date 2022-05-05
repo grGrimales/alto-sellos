@@ -1,0 +1,21 @@
+{
+  "name": "alto-sellos",
+  "version": "1.0.0",
+  "description": "Sitio web de sellos artesanales",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "sellos",
+    "artesanales"
+  ],
+  "author": "Grediana - Natalia",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
