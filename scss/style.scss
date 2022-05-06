@@ -1,3 +1,5 @@
-.header {
-    background-color: black;
-}
+@import "./pages/home";
+@import "general";
+@import "header";
+@import "variables";
+@import "mixins";
