@@ -26,24 +26,24 @@ header {
     padding: 0px 20px;
 }
 
-header {
-    .logo {
+
+.logo {
 
 
-        img {
+    img {
 
-            width: 70px;
+        width: 70px;
 
-            @include medium {
-                width: 150px;
-            }
-        }
-
-        .logo_mod {
-            width: 70px;
+        @include medium {
+            width: 150px;
         }
     }
+
+    .logo_mod {
+        width: 70px;
+    }
 }
+
 
 
 
