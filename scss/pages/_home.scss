@@ -88,35 +88,35 @@
 .cover {
 
     .container__info {
-        max-width: 400px;
-        margin-top: 40px;
+        max-width: 25rem;
+        margin-top: 2.5rem;
         z-index: 2;
     }
 
     h1 {
-        max-width: 400px;
-        font-size: 60px;
+        max-width: 25rem;
+        font-size: 3.75rem;
         font-weight: 900;
         color: #fff;
     }
 
     h2 {
-        font-size: 60px;
+        font-size: 3.75rem;
         font-weight: 900;
         // color: #FEBA0B;
         margin-top: -30px;
     }
 
     p {
-        margin-top: 10px;
+        margin-top: 0.62rem;
         color: #fff;
     }
 
 
     input[type="button"] {
         padding: 10px 40px;
-        margin-top: 40px;
-        font-size: 18px;
+        margin-top: 2.5rem;
+        font-size: 1.12rem;
         font-weight: 600;
         border: none;
         color: white;
@@ -139,7 +139,7 @@
     img {
 
         border-radius: .6rem;
-        width: 400px;
+        width: 25rem;
         animation: move_vector 6s ease-in-out infinite;
 
         @include max {
@@ -149,7 +149,7 @@
 
         @include large {
             position: absolute;
-            bottom: 10px;
+            bottom: 0.62rem;
             right: 0px;
 
             transition: all 300ms;
