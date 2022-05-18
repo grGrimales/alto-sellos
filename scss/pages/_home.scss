@@ -103,7 +103,6 @@
     h2 {
         font-size: 3.75rem;
         font-weight: 900;
-        // color: #FEBA0B;
         margin-top: -30px;
     }
 
@@ -113,13 +112,13 @@
     }
 
 
-    input[type="button"] {
+
+    button {
         padding: 10px 40px;
         margin-top: 2.5rem;
         font-size: 1.12rem;
         font-weight: 600;
         border: none;
-        color: white;
         background: #FEBA0B;
         border-radius: 20px;
         box-shadow: 1px 1px 30px -5px #20202049;
@@ -128,6 +127,11 @@
 
         &:hover {
             box-shadow: 1px 1px 30px -5px #20202085;
+        }
+
+        a {
+            color: $color-secundario;
+
         }
     }
 }
