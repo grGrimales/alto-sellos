@@ -1,26 +1,36 @@
 @import "../mixins";
 @import "../variables";
 
+.mainAbout {
+    height: 100%;
 
+
+    @include large {
+        height: 130rem;
+    }
+
+    @include xxl {
+        height: 80rem;
+
+    }
+}
 
 .titleAbout {
-
+    font-size: 2.7rem;
+    font-weight: 900;
     text-align: center;
     padding: 2rem;
     color: $color-title;
-    font-size: 3.75rem;
-    font-weight: 900;
+
+    @include medium {
+        font-size: 3.75rem;
+
+    }
 }
 
 
 .sectionAboutUs {
     padding: 1rem;
-
-
-    // @include medium {
-
-    //     height: 80rem;
-    // }
 
 }
 
@@ -81,12 +91,12 @@
     text-align: center;
     margin-bottom: 1rem;
     color: $color-title;
-    font-size: 3.75rem;
+    font-size: 2.5rem;
     font-weight: 900;
 
 
     @include medium {
-        font-size: 2.5rem;
+        font-size: 3.75rem;
 
     }
 }
@@ -126,81 +136,6 @@
         width: 5rem;
         align-self: flex-start;
 
-
-    }
-}
-
-.creations {
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
-
-    margin-bottom: 2rem;
-
-    @include medium {
-        width: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-}
-
-.container {
-    position: relative;
-    margin: 1rem;
-    margin: 0 auto;
-
-    @include medium {
-        width: 50%;
-
-    }
-}
-
-.image {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-}
-
-.overlay {
-    position: absolute;
-    border-radius: 1rem;
-
-    bottom: 0;
-    left: 100%;
-    right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .5s ease;
-}
-
-.container:hover .overlay {
-    width: 100%;
-    left: 0;
-}
-
-.text {
-    white-space: nowrap;
-    color: $color-secundario;
-    font-size: 2.5rem;
-    font-weight: bold;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.logo {
-    .logo__img {
-        width: 9rem;
-        margin: 0 auto;
 
     }
 }

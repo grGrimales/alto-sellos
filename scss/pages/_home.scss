@@ -1,183 +1,137 @@
-@import "variables";
-@import "mixins";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-
-
-.cover {
-    width: 100%;
-    padding-bottom: 120px;
-    font-family: 'Poppins', sans-serif;
-    padding-top: 100px;
-    position: relative;
-    overflow: hidden;
-}
-
-.bg_color {
-    width: 100%;
-    height: 70%;
-    background: $color-principal;
-    position: absolute;
-    top: 0;
-}
-
-.wave {
-    width: 6000px;
+.mainHome {
     height: 100%;
-    position: absolute;
-    top: 150px;
-    left: 0;
-    background-image: url("../images/wd1.svg");
-    background-position: bottom;
-}
 
-.w1 {
-    animation: w1 7s linear infinite;
-}
 
-.w2 {
-    animation: w2 7s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
-    opacity: 0.5;
-}
-
-@keyframes w1 {
-    0% {
-        margin-left: 0;
+    @include large {
+        height: 100rem;
     }
 
-    100% {
-        margin-left: -1600px;
+    @include xxl {
+        height: 70rem;
+
     }
 }
 
-@keyframes w2 {
-    0% {
-        margin-left: 0;
-    }
-
-    100% {
-        margin-left: -1600px;
-    }
-}
-
-@keyframes desplazamiento {
-
-    0%,
-    100% {
-        transform: translateY(-25px);
-    }
-
-    50% {
-        transform: translateY(10px);
-    }
-}
-
-.container__cover {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    background-size: cover;
-    background-position: bottom;
-}
-
-
-.cover {
-
-    .container__info {
-        max-width: 25rem;
-        margin-top: 2.5rem;
-        z-index: 2;
-    }
-
-    h1 {
-        max-width: 25rem;
-        font-size: 3.75rem;
-        font-weight: 900;
-        color: #fff;
-    }
+.sectionSlogan {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 2rem;
 
     h2 {
-        font-size: 3.75rem;
+        margin-bottom: 2rem;
+        font-size: 2.7rem;
         font-weight: 900;
-        margin-top: -30px;
+
+        @include medium {
+            font-size: 3.75rem;
+
+        }
     }
 
     p {
-        margin-top: 0.62rem;
-        color: #fff;
-    }
+        font-size: 2rem;
+        margin-bottom: 3rem;
 
-
-
-    button {
-        padding: 4px 40px;
-        margin-top: 2.5rem;
-        font-size: 1.12rem;
-        font-weight: 600;
-        border: none;
-        background: #52b69a;
-        border-radius: 20px;
-        box-shadow: 1px 1px 30px -5px #20202049;
-        cursor: pointer;
-        transition: box-shadow 500ms;
-
-        @include medium {
-            padding: 10px 40px;
-        }
-
-        &:hover {
-            box-shadow: 1px 1px 30px -5px #20202085;
-        }
-
-        a {
-            color: $color-secundario;
-
-        }
     }
 }
 
+.sloganImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
 
-.container__vector {
-    position: relative;
+    @include medium {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
     img {
+        width: 16rem;
+        border-radius: .8rem;
+        transition: transform ease-in-out .3s;
 
-        border-radius: .6rem;
-        width: 25rem;
-        animation: move_vector 6s ease-in-out infinite;
 
-        @include max {
-            transform: scale(0);
-            animation: none;
+        &:hover {
+            transform: scale(1.1);
         }
 
-        @include large {
-            position: absolute;
-            bottom: 0.62rem;
-            right: 0px;
+        @include medium {
+            width: 20rem;
 
-            transition: all 300ms;
         }
-
     }
-
 }
 
 
-@keyframes move_vector {
-    0% {
-        transform: translateY(10px);
+.sectionTestimony {
+    margin-top: 3rem;
+
+
+    h2 {
+
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2.7rem;
+        font-weight: 900;
+
+        @include medium {
+            font-size: 3.75rem;
+
+        }
+    }
+}
+
+.testimonyAll {
+
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+
+    @include medium {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+
+.containerTestimony {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    @include medium {
+        grid-template-columns: .2fr 1fr;
+
     }
 
-    25% {
-        transform: translateY(-10px);
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        border: 2px solid $color-principal;
+        transition: transform ease-in-out .3s;
+
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
-    100% {
-        transform: translateY(10px);
+    span {
+        font-weight: bold;
+
+        @include medium {
+            align-self: flex-end;
+        }
     }
+}
+
+.containerTestimony_description {
+    display: flex;
+    flex-direction: column;
 }
