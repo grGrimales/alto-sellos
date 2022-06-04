@@ -114,16 +114,20 @@
 
 
     button {
-        padding: 10px 40px;
+        padding: 4px 40px;
         margin-top: 2.5rem;
         font-size: 1.12rem;
         font-weight: 600;
         border: none;
-        background: #FEBA0B;
+        background: #52b69a;
         border-radius: 20px;
         box-shadow: 1px 1px 30px -5px #20202049;
         cursor: pointer;
         transition: box-shadow 500ms;
+
+        @include medium {
+            padding: 10px 40px;
+        }
 
         &:hover {
             box-shadow: 1px 1px 30px -5px #20202085;
