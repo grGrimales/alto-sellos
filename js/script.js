@@ -26,7 +26,7 @@ function mostrar_menu() {
 }
 
 window.addEventListener("resize", function () {
-  if (window.innerWidth > 760) {
+  if (window.innerWidth > 860) {
     body.classList.remove("move_content");
     menu.classList.remove("move_content");
     nav.classList.remove("move_nav");

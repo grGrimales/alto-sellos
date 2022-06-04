@@ -32,7 +32,7 @@ header {
 
         width: 70px;
 
-        @include medium {
+        @include large {
             width: 150px;
         }
     }

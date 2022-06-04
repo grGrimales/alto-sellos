@@ -48,7 +48,7 @@ header {
 
 .logo img {
   width: 70px; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .logo img {
       width: 150px; } }
 
@@ -58,7 +58,7 @@ header {
 .container__nav {
   position: relative;
   height: 100%; }
-  @media (max-width: 760px) {
+  @media (max-width: 859px) {
     .container__nav {
       display: flex;
       justify-content: center;
@@ -66,7 +66,7 @@ header {
 
 nav {
   height: 100%; }
-  @media (max-width: 760px) {
+  @media (max-width: 859px) {
     nav {
       height: 100%;
       background: #F1FAFF;
@@ -79,7 +79,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center; }
-    @media (max-width: 760px) {
+    @media (max-width: 859px) {
       nav ul {
         flex-direction: column; } }
     @media (min-width: 768px) {
@@ -87,7 +87,7 @@ nav {
         padding: 2rem; } }
     nav ul li {
       margin: 0px 20px; }
-      @media (max-width: 760px) {
+      @media (max-width: 859px) {
         nav ul li {
           margin: 20px 0px; } }
       nav ul li a {
@@ -132,11 +132,11 @@ nav {
   display: none; }
   .btn__menu:hover {
     background: #f5f5f5; }
-  @media (max-width: 760px) {
+  @media (max-width: 859px) {
     .btn__menu {
       display: flex; } }
 
-@media (max-width: 760px) {
+@media (max-width: 859px) {
   .move_nav {
     right: 0px;
     background-color: #2196f3;
@@ -249,7 +249,7 @@ nav {
     border-radius: .6rem;
     width: 25rem;
     animation: move_vector 6s ease-in-out infinite; }
-    @media (max-width: 760px) {
+    @media (max-width: 859px) {
       .container__vector img {
         transform: scale(0);
         animation: none; } }
